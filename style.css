@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;  /* try changing the sixe*/
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .login {
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 70px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.cta-button {
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.feature {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+.feature:nth-child(odd) .feature-image {
+    order: 1;
+}
+
+.feature:nth-child(even) .feature-image {
+    order: 2;
+}
+
+.feature-image {
+    width: 10%;
+    height: auto;
+}
+
+.feature-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.feature-content h2 {
+    font-size: 40px;
+}
+
+.feature-content h3 {
+    font-size: 28px;
+}
+
+.feature-content p, .feature-content ul {
+    font-size: 17px;
+}
+
+.feature-content ul {
+    padding-left: 20px;
+}
+
+.horizontal-features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.feature-box {
+    width: 45%;
+}
+
+.calculator {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+.calculator h2 {
+    font-size: 40px;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stars {
+    font-size: 24px;
+    color: #000000;
+}
+
+.testimonial-quote {
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.testimonial-info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info-text {
+    text-align: left;
+}
+
+.info-text .name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-text .title {
+    font-size: 14px;
+    color: #777;
+}
+
+.webflow-logo {
+    width: 50px;
+    margin-left: 15px;
+}
+
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0 650px;
+}
+
+.nav-button.prev {
+    transform: rotate(0deg);
+}
+
+/* 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-links,
+.footer-social {
+    max-width: 45%;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    font-size: 18px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+} */
